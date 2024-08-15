@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --primaryColor: #0ea5e9;
+  --primaryColorDarken: #0284c7;
+  --primaryColorLighten: #38bdf8;
+}
+
+body {
+  font-family: 'Mulish', 'Noto Sans SC', sans-serif;
+}
+
+img[lazy='loading'] {
+  @apply animate-pulse bg-gray-300;
+}
