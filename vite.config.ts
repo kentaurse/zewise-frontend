@@ -6,15 +6,15 @@ export default defineConfig({
   server: {
     proxy: {
       '/api/aigc': {
-        target: 'http://119.45.125.226:8000/',
+        target: 'http://127.0.0.1:8000/',
         changeOrigin: true
       },
       '/api': {
-        target: 'http://119.45.125.226:3000/',
+        target: 'http://127.0.0.1:3000/',
         changeOrigin: true
       },
       '/resources': {
-        target: 'http://119.45.125.226:3000/',
+        target: 'http://127.0.0.1:3000/',
         changeOrigin: true
       },
     }
